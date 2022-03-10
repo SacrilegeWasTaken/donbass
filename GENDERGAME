@@ -1,0 +1,48 @@
+import random
+
+print("Gender constructor.")
+
+stone = ['Intel' , 'Ryzen' , 'Baikal-M', 'M1', 'M1 ULTRA']
+graphics = ['AMD', 'Nvidia 3090', 'GTX 2107 LADA', 'IntelCraphics']
+mother_board = ['MSI', 'ASUS', 'GIGABYTE', 'Mother-Russia-Board']
+ram = ['Corsair', 'Kingston', 'Alapaevsky Metallurgical factory']
+
+
+print("Choose your stone: ",stone)
+answer_stone = int(input(""))
+
+print("Choose your graphics: ",graphics)
+answer_graphics = int(input(""))
+
+print("Choose your motherboard: ",mother_board)
+answer_mother_board = int(input(""))
+
+print("Choose your RAM: ",ram)
+answer_ram = int(input(""))
+
+
+if answer_stone > 5 or answer_stone < 1:
+  print("ERROR! YOUR GENDER IS NOT DETERMINED")
+    
+elif answer_graphics > 4 or answer_graphics < 1:
+  print("ERROR! YOUR GENDER IS NOT DETERMINED")
+elif answer_mother_board > 4 or answer_mother_board < 1:
+  print("ERROR!YOUR GENDER IS NOT DETERMINED")
+elif answer_ram > 3 or answer_ram < 1:
+  print("ERROR! YOUR GENDER IS NOT DETERMINED")
+elif answer_stone == 3 and answer_graphics == 3 and answer_mother_board == 4 and answer_ram == 3:
+  print('Victory! Congratulations, your gender is MOTHER RUSSIA!')
+elif answer_stone == 1 and answer_graphics == 2 and answer_mother_board == 3 and answer_ram == 1:
+  print('Victory! Congratulations, your gender is INTELBOY!')
+elif answer_stone == 2 and answer_graphics == 1 and answer_mother_board == 3 and answer_ram == 2:
+  print('Victory! Congratulations, your gender is AMDGAY!')
+else:
+  gender_list = ['Agender' , 'Androgyne' , 'Androgynous' , 'Bigender' , 'Cis' , 'Cisgender' , 'Cis Female' , 'Cis Male' , 'Cis Man' , 'Cis Woman' , 'Cisgender Female' , 'Cisgender Male' , 'Cisgender Man' , 'Cisgender Woman' , 'Female to Male' , 'FTM' , 'Gender Fluid' , 'Gender Nonconforming' , 'Gender Questioning' , 'Gender Variant' , 'Genderqueer' , 'Intersex' , 'Male to Female MTF' , 'Neither' , 'Neutrois' , 'Non-binary' , 'Other' , 'Pangender' , 'Trans' , 'Trans*' , 'Trans Female' , 'Trans* Female' , 'Trans Male' , 'Trans* Male' , 'Trans Man' , 'Trans* Man' , 'Trans Person' , 'Trans* Person' , 'Trans Woman' , 'Trans* Woman' , 'Transfeminine' , 'Transgender' , 'Transgender Female' , 'Transgender Male' , 'Transgender Man' , 'Transgender Person' , 'Transgender Woman' , 'Transmasculine' , 'Transsexual' , 'Transsexual Female' , 'Transsexual Male' , 'Transsexual Man' , 'Transsexual Person' , 'Transsexual Woman' , 'Two-Spirit']
+  gender = random.randint(1, 55)
+  print('Your gender is', gender_list[gender], ', explain what this gender means.\n')
+
+
+print("Next Part of madnes: We generate random word or phrase and you explainting this. Let's get it started...\n")
+words = ['GAY', 'Screwdriver', 'Thermonuclear fusion', 'MotherBoard', 'APACH HELICOPTER', 'Vusial Studio<3', 'CIS', 'coding library', 'application', 'PUTIN', 'MainThread', 'Parser', 'IPsec', 'L2TP', 'TIKTOK']
+word = random.randint(1, 15)
+print('Your words/phrase is', words[word], ', explain what this means...', end='\n' )
